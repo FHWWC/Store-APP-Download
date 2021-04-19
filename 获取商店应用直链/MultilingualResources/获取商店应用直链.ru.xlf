@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="zh-Hans" target-language="ru" original="获取商店应用直链/STRINGS/ZH-HANS/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="获取商店应用直链/STRINGS/ZH-HANS/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="页面1.Header" translate="yes" xml:space="preserve">
+          <source>请选择您要提供的信息</source>
+          <target state="new">请选择您要提供的信息</target>
+        </trans-unit>
+        <trans-unit id="页面10.Content" translate="yes" xml:space="preserve">
+          <source>发布预览</source>
+          <target state="new">发布预览</target>
+        </trans-unit>
+        <trans-unit id="页面11.Content" translate="yes" xml:space="preserve">
+          <source>默认一般通道</source>
+          <target state="new">默认一般通道</target>
+        </trans-unit>
+        <trans-unit id="页面12.Text" translate="yes" xml:space="preserve">
+          <source>下载面板</source>
+          <target state="new">下载面板</target>
+        </trans-unit>
+        <trans-unit id="页面13.Content" translate="yes" xml:space="preserve">
+          <source>点击获取链接</source>
+          <target state="new">点击获取链接</target>
+        </trans-unit>
+        <trans-unit id="页面14.Text" translate="yes" xml:space="preserve">
+          <source>文件名</source>
+          <target state="new">文件名</target>
+        </trans-unit>
+        <trans-unit id="页面15.Text" translate="yes" xml:space="preserve">
+          <source>获取结果</source>
+          <target state="new">获取结果</target>
+        </trans-unit>
+        <trans-unit id="页面16.Text" translate="yes" xml:space="preserve">
+          <source>文件信息</source>
+          <target state="new">文件信息</target>
+        </trans-unit>
+        <trans-unit id="页面17.Text" translate="yes" xml:space="preserve">
+          <source>下载文件</source>
+          <target state="new">下载文件</target>
+        </trans-unit>
+        <trans-unit id="页面18.Text" translate="yes" xml:space="preserve">
+          <source>复制链接</source>
+          <target state="new">复制链接</target>
+        </trans-unit>
+        <trans-unit id="页面19.Content" translate="yes" xml:space="preserve">
+          <source>打开安装包</source>
+          <target state="new">打开安装包</target>
+        </trans-unit>
+        <trans-unit id="页面2.Content" translate="yes" xml:space="preserve">
+          <source>提供 商店URL</source>
+          <target state="new">提供 商店URL</target>
+        </trans-unit>
+        <trans-unit id="页面20.Text" translate="yes" xml:space="preserve">
+          <source>打开失败,请确保您要打开的是.appx/.appxbundle/.xap</source>
+          <target state="new">打开失败,请确保您要打开的是.appx/.appxbundle/.xap</target>
+        </trans-unit>
+        <trans-unit id="页面21.PrimaryButtonText" translate="yes" xml:space="preserve">
+          <source>继续</source>
+          <target state="new">继续</target>
+        </trans-unit>
+        <trans-unit id="页面21.SecondaryButtonText" translate="yes" xml:space="preserve">
+          <source>取消</source>
+          <target state="new">取消</target>
+        </trans-unit>
+        <trans-unit id="页面22.Text" translate="yes" xml:space="preserve">
+          <source>您有下载任务未完成,继续新的下载会取消当前下载,是否继续?</source>
+          <target state="new">您有下载任务未完成,继续新的下载会取消当前下载,是否继续?</target>
+        </trans-unit>
+        <trans-unit id="页面3.Content" translate="yes" xml:space="preserve">
+          <source>提供 产品ID</source>
+          <target state="new">提供 产品ID</target>
+        </trans-unit>
+        <trans-unit id="页面4.Content" translate="yes" xml:space="preserve">
+          <source>提供 程序包系列名称</source>
+          <target state="new">提供 程序包系列名称</target>
+        </trans-unit>
+        <trans-unit id="页面5.Content" translate="yes" xml:space="preserve">
+          <source>提供 包发行者ID</source>
+          <target state="new">提供 包发行者ID</target>
+        </trans-unit>
+        <trans-unit id="页面6.Header" translate="yes" xml:space="preserve">
+          <source>请输入您提供的信息,URL/SID/PFN/PID</source>
+          <target state="new">请输入您提供的信息,URL/SID/PFN/PID</target>
+        </trans-unit>
+        <trans-unit id="页面7.Header" translate="yes" xml:space="preserve">
+          <source>选择通道(如果支持)</source>
+          <target state="new">选择通道(如果支持)</target>
+        </trans-unit>
+        <trans-unit id="页面8.Content" translate="yes" xml:space="preserve">
+          <source>快速通道</source>
+          <target state="new">快速通道</target>
+        </trans-unit>
+        <trans-unit id="页面9.Content" translate="yes" xml:space="preserve">
+          <source>慢速通道</source>
+          <target state="new">慢速通道</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
