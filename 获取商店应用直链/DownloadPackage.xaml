@@ -1,0 +1,176 @@
+﻿<Page
+    x:Class="获取商店应用直链.DownloadPackage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:获取商店应用直链"
+    xmlns:data="using:获取商店应用直链"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+
+    <Page.Resources>
+        <DataTemplate x:Name="资源1">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="500"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="{Binding 文件名}" Foreground="{Binding 标题颜色}" Grid.Column="0" TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding 详细信息}" Grid.Column="1" TextWrapping="Wrap" Margin="10,0,0,0"/>
+            </Grid>
+        </DataTemplate>
+        <Style x:Key="ButtonStyle1" TargetType="Button">
+            <Setter Property="Background" Value="{ThemeResource ButtonBackground}"/>
+            <Setter Property="BackgroundSizing" Value="OuterBorderEdge"/>
+            <Setter Property="Foreground" Value="{ThemeResource ButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource ButtonBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}"/>
+            <Setter Property="Padding" Value="{StaticResource ButtonPadding}"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}"/>
+            <Setter Property="FocusVisualMargin" Value="-3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" CornerRadius="50" ContentTransitions="{TemplateBinding ContentTransitions}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBackgroundPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBorderBrushPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBackgroundPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBorderBrushPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBackgroundDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonBorderBrushDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ButtonForegroundDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ContentPresenter>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="A">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                        <AdaptiveTrigger MinWindowHeight="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="布局2.Orientation" Value="Vertical" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="B">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                        <AdaptiveTrigger MinWindowHeight="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <StackPanel Name="布局1" Margin="20" HorizontalAlignment="Center">
+            <StackPanel x:Name="布局2" Orientation="Horizontal" HorizontalAlignment="Center">
+                <ComboBox x:Uid="页面1" x:FieldModifier="Public" Name="类型" Header="请选择您要提供的信息" FontSize="14" SelectionChanged="类型_SelectionChanged">
+                    <ComboBoxItem x:Uid="页面2" Content="提供 商店URL" Tag="url"/>
+                    <ComboBoxItem x:Uid="页面3" Content="提供 产品ID" Tag="ProductId"/>
+                    <ComboBoxItem x:Uid="页面4" Content="提供 程序包系列名称" Tag="PackageFamilyName"/>
+                    <ComboBoxItem x:Uid="页面5" Content="提供 包发行者ID" Tag="CategoryId"/>
+                </ComboBox>
+                <TextBox x:Uid="页面6" x:FieldModifier="Public" Name="信息" Header="请输入您提供的信息,URL/SID/PFN/CID" TextWrapping="Wrap" HorizontalAlignment="Left" MaxWidth="250" FontSize="14" Margin="10,0,0,0"/>
+                <ComboBox x:Uid="页面7" Name="通道" Header="选择通道(如果支持)" FontSize="14" Margin="10,0,0,0">
+                    <ComboBoxItem x:Uid="页面8" Content="快速通道" Tag="WIF"/>
+                    <ComboBoxItem x:Uid="页面9" Content="慢速通道" Tag="WIS"/>
+                    <ComboBoxItem x:Uid="页面10" Content="发布预览" Tag="RP"/>
+                    <ComboBoxItem x:Uid="页面11" Content="默认一般通道" Tag="Retail" IsSelected="True"/>
+                </ComboBox>
+            </StackPanel>
+
+            <Button Style="{StaticResource ButtonStyle1}" Name="确认" Content="&#xE0E7;" FontFamily="Segoe MDL2 Assets" Height="50" Width="50" FontSize="18" HorizontalAlignment="Right" Click="确认_Click" Margin="0,20,0,0"/>
+
+            <TextBlock x:Uid="页面23" Name="提示" Text="获取链接失败!请检查你提供的信息正确无误,然后再试一次" Visibility="Collapsed"/>
+            <TextBlock x:Uid="页面24" Name="提示2" Text="与服务器连接出现问题,请稍后重试." Visibility="Collapsed"/>
+            <ListView Name="获取结果" ItemTemplate="{StaticResource 资源1}" HorizontalAlignment="Center" IsItemClickEnabled="True" ItemClick="获取结果_ItemClick" Margin="0,40,0,0">
+                <FlyoutBase.AttachedFlyout>
+                    <MenuFlyout x:Name="弹出">
+                        <MenuFlyoutItem x:Uid="页面17" Name="下载" Text="下载文件" Background="Red" Click="下载_Click"/>
+                        <MenuFlyoutItem x:Uid="页面18" Name="复制" Text="复制链接" Click="复制_Click"/>
+                    </MenuFlyout>
+                </FlyoutBase.AttachedFlyout>
+            </ListView>
+
+            <TextBlock x:Uid="页面12" Text="下载面板" FontSize="20" Margin="0,50,0,0"/>
+            <ListView Margin="0,10,0,0">
+                <ListViewItem>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding ElementName=进度条,Path=Value}" Foreground="SandyBrown"/>
+                            <TextBlock Text="%"/>
+                            <TextBlock Name="已下载大小" Text="0" Margin="20,0,0,0" Foreground="SandyBrown"/>
+                            <TextBlock Text=" KB/"/>
+                            <TextBlock Name="总大小" Text="0" Foreground="SandyBrown"/>
+                            <TextBlock Text=" KB"/>
+                        </StackPanel>
+                        <Button Name="继续" Visibility="Collapsed" Content="&#xE102;" FontFamily="Segoe MDL2 Assets" Background="{x:Null}" Click="继续_Click"/>
+                        <ProgressBar Name="进度条"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+            <Button x:Uid="页面19" Name="打开" Content="打开安装包" Click="打开_Click" IsEnabled="False" Margin="0,20,0,0"/>
+            <TextBlock x:Uid="页面20" Name="OpenError" Text="打开失败,请确保您要打开的是.appx/.appxbundle/.xap" Visibility="Collapsed"/>
+        </StackPanel>
+        <ContentDialog x:Uid="页面21" Name="下载提示" PrimaryButtonText="继续" PrimaryButtonClick="下载提示_PrimaryButtonClick" SecondaryButtonText="取消">
+            <StackPanel>
+                <TextBlock x:Uid="页面22" Foreground="Orange" Text="您有下载任务未完成,继续新的下载会取消当前下载,是否继续?" TextWrapping="Wrap"/>
+            </StackPanel>
+        </ContentDialog>
+    </Grid>
+</Page>

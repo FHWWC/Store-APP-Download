@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="获取商店应用直链.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:获取商店应用直链"
+    xmlns:data="using:获取商店应用直链"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <Grid Name="布局1">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="A">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                        <AdaptiveTrigger MinWindowHeight="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="布局1.Background" Value="LightBlue" />
+                        <Setter Target="布局3.Background" Value="LightBlue" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="B">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                        <AdaptiveTrigger MinWindowHeight="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="LightBlue" Offset="0"/>
+                <GradientStop Color="GhostWhite" Offset="0.5"/>
+                <GradientStop Color="LightBlue" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <ProgressRing x:FieldModifier="Public" Name="MainLoading" Height="80" Width="80" VerticalAlignment="Center" Foreground="Azure"/>
+
+        <Grid Name="布局2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Name="LPControl" Grid.Row="0" FontSize="28" Width="50" Height="50" Content="&#xE700;" Background="SkyBlue" FontFamily="Segoe MDL2 Assets" Click="LPControl_Click"/>
+            <SplitView Name="LeftPanel" Grid.Row="1" DisplayMode="CompactOverlay" OpenPaneLength="180" CompactPaneLength="50" Height="Auto">
+                <SplitView.Pane>
+                    <StackPanel Name="布局3">
+                        <StackPanel.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="LightBlue" Offset="0"/>
+                                <GradientStop Color="LightBlue" Offset="0.5"/>
+                                <GradientStop Color="LightBlue" Offset="1"/>
+                            </LinearGradientBrush>
+                        </StackPanel.Background>
+                        <ListView x:FieldModifier="Public" Name="LeftList" SelectionChanged="LeftList_SelectionChanged">
+                            <ListViewItem>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE167;" FontFamily="Segoe MDL2 Assets" Margin="5"/>
+                                    <TextBlock x:Uid="页面25" Text="获取链接" Margin="20,0,0,0"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            <ListViewItem>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE094;" FontFamily="Segoe MDL2 Assets" Margin="5"/>
+                                    <TextBlock x:Uid="页面28" Text="搜索应用" Margin="20,0,0,0"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            <!--
+                            <ListViewItem>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xE14D;" FontFamily="Segoe MDL2 Assets" Margin="5"/>
+                                    <TextBlock x:Uid="页面26" Text="下载便携版" Margin="20,0,0,0"/>
+                                </StackPanel>
+                            </ListViewItem>
+                            -->
+                        </ListView>
+                    </StackPanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <ScrollViewer>
+                        <Frame Name="APPFrame"/>
+                    </ScrollViewer>
+                </SplitView.Content>
+            </SplitView>
+        </Grid>
+
+        <WebView x:FieldModifier="Public" Name="WebView1" Visibility="Collapsed" Height="500"/>
+    </Grid>
+</Page>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <Source>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</Source>
+    <SmallTileSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</SmallTileSource>
+    <MediumTileSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</MediumTileSource>
+    <WideTileSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</WideTileSource>
+    <LargeTileSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</LargeTileSource>
+    <AppIconSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</AppIconSource>
+    <BadgeLogoSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</BadgeLogoSource>
+    <PackageLogoSource>D:\VS 2015-17 Project\获取商店应用直链\获取商店应用直链\Assets\APPICON.png</PackageLogoSource>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+</Project>

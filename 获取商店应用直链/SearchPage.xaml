@@ -1,0 +1,83 @@
+﻿<Page
+    x:Class="获取商店应用直链.SearchPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:获取商店应用直链"
+    xmlns:data="using:获取商店应用直链"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="资源1">
+            <StackPanel>
+                <Image Source="{Binding 应用图标}"/>
+                <TextBlock Text="{Binding 应用名}" TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid Margin="20">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="A">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                        <AdaptiveTrigger MinWindowHeight="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="布局1.Orientation" Value="Vertical" />
+                        <Setter Target="搜索.Width" Value="400" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="B">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                        <AdaptiveTrigger MinWindowHeight="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Uid="搜索页4" Text="搜索功能在国内需要使用VPN等服务才能使用，API由微软提供。"/>
+        <StackPanel Name="布局1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,40,0,0">
+            <ComboBox x:Uid="搜索页1" Name="市场" Header="选择市场" HorizontalAlignment="Center">
+                <ComboBoxItem Content="zh-cn"/>
+                <ComboBoxItem Content="en-us"/>
+                <ComboBoxItem Content="ru-ru"/>
+            </ComboBox>
+            <ComboBox x:Uid="搜索页5" Name="FindType" Header="类型" Margin="10,0,0,0">
+                <ComboBoxItem Content="app" IsSelected="True"/>
+                <ComboBoxItem Content="game"/>
+            </ComboBox>
+            <TextBox x:Uid="搜索页2" Name="内容" Header="输入要搜索的app名称:" Width="400" VerticalAlignment="Top" Margin="40,0,0,0"/>
+            <Button Name="搜索" Content="&#xE094;" FontSize="22" Background="{x:Null}" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" Margin="10,20,0,0" Click="搜索_Click"/>
+        </StackPanel>
+        <Button Grid.Row="1" x:Uid="搜索页3" Name="跳转" Content="获取直链" VerticalAlignment="Top" Visibility="Collapsed" Click="跳转_Click"/>
+        <ScrollViewer Grid.Row="1" Height="500" Margin="0,40,0,0">
+            <StackPanel>
+                <ListView Name="APPList" ItemTemplate="{StaticResource 资源1}" Background="LightGray" SelectionChanged="APPList_SelectionChanged">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="Height" Value="250"/>
+                            <Setter Property="Width" Value="150"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+
+        <WebView Name="WebView1" Visibility="Collapsed" Height="600"/>
+    </Grid>
+</Page>
