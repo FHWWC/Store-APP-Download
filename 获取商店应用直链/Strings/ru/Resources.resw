@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="便携1.Text" xml:space="preserve">
+    <value>Скачать портативный:</value>
+  </data>
+  <data name="便携2.Text" xml:space="preserve">
+    <value>Используйте портативную версию, приложение предоставит вам множество элементов на выбор, вам не нужно вводить идентификатор приложения.</value>
+  </data>
+  <data name="便携3.Text" xml:space="preserve">
+    <value>Если в вашей установленной Windows 10 не было MS Store, вы можете использовать эту портативную версию, это приложение доступно во всех версиях Windows 10!</value>
+  </data>
+  <data name="便携4.Text" xml:space="preserve">
+    <value>Скачать:</value>
+  </data>
+  <data name="便携5.Text" xml:space="preserve">
+    <value>КАК установить: После распаковки запустите файл сценария Powershell, предоставленный в пакете, тип файла - .ps, и следуйте подсказкам сценария после запуска.</value>
+  </data>
+  <data name="便携6.Text" xml:space="preserve">
+    <value>if you have any questions, you can create an issues on the Github project or send a feedback email to us, Thank you!</value>
+  </data>
+  <data name="搜索页1.Header" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="搜索页2.Header" xml:space="preserve">
+    <value>Пожалуйста, введите название приложения, которое вы хотите найти:</value>
+  </data>
+  <data name="搜索页3.Content" xml:space="preserve">
+    <value>Возьми</value>
+  </data>
+  <data name="搜索页4.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="搜索页5.Header" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="页面1.Header" xml:space="preserve">
+    <value>Пожалуйста, выберите тип</value>
+  </data>
+  <data name="页面10.Content" xml:space="preserve">
+    <value>Release Preview</value>
+  </data>
+  <data name="页面11.Content" xml:space="preserve">
+    <value>Defalut</value>
+  </data>
+  <data name="页面12.Text" xml:space="preserve">
+    <value>Панель загрузки</value>
+  </data>
+  <data name="页面14.Text" xml:space="preserve">
+    <value>Файл:</value>
+  </data>
+  <data name="页面15.Content" xml:space="preserve">
+    <value>Установить пакет сейчас</value>
+  </data>
+  <data name="页面16.Text" xml:space="preserve">
+    <value>Информация о файле</value>
+  </data>
+  <data name="页面17.Text" xml:space="preserve">
+    <value>Скачать файл</value>
+  </data>
+  <data name="页面18.Text" xml:space="preserve">
+    <value>Копировать ссылку</value>
+  </data>
+  <data name="页面19.Content" xml:space="preserve">
+    <value>Открыть пакет</value>
+  </data>
+  <data name="页面2.Content" xml:space="preserve">
+    <value>Use Store URL</value>
+  </data>
+  <data name="页面20.Text" xml:space="preserve">
+    <value>Открыть не удалось, убедитесь, что вы открываете: .appx / .appxbundle / .xap / .eappxbundle</value>
+  </data>
+  <data name="页面21.PrimaryButtonText" xml:space="preserve">
+    <value>New download</value>
+  </data>
+  <data name="页面21.SecondaryButtonText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="页面22.Text" xml:space="preserve">
+    <value>You have not completed the download task. If you continue the new download, the current download will be canceled. Continue?</value>
+  </data>
+  <data name="页面23.Text" xml:space="preserve">
+    <value>Получить ссылку не удалось !! Пожалуйста, проверьте еще раз, Пожалуйста, убедитесь, что ваша информация верна</value>
+  </data>
+  <data name="页面24.Text" xml:space="preserve">
+    <value>Сожалею! При подключении к серверу возникла проблема. Повторите попытку позже.</value>
+  </data>
+  <data name="页面25.Text" xml:space="preserve">
+    <value>Получить ссылки</value>
+  </data>
+  <data name="页面26.Text" xml:space="preserve">
+    <value>Скачать портативный</value>
+  </data>
+  <data name="页面28.Text" xml:space="preserve">
+    <value>Поиск приложений в магазине</value>
+  </data>
+  <data name="页面3.Content" xml:space="preserve">
+    <value>SID(Store ID)</value>
+  </data>
+  <data name="页面4.Content" xml:space="preserve">
+    <value>PFN(Package Family Name)</value>
+  </data>
+  <data name="页面5.Content" xml:space="preserve">
+    <value>PID(Package Identity Publisher)</value>
+  </data>
+  <data name="页面6.Header" xml:space="preserve">
+    <value>Пожалуйста, введите вашу информацию,URL/SID/PFN/PID</value>
+  </data>
+  <data name="页面7.Header" xml:space="preserve">
+    <value>Выберите канал (если доступен)</value>
+  </data>
+  <data name="页面8.Content" xml:space="preserve">
+    <value>Fast/Skip</value>
+  </data>
+  <data name="页面9.Content" xml:space="preserve">
+    <value>Slow</value>
+  </data>
+</root>
